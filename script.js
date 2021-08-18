@@ -1,1 +1,1 @@
-const formInputs = document.querySelectorAll('')
+const formInputs = document.querySelectorAll('.form-input')

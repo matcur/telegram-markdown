@@ -88,14 +88,31 @@ body {
   background: #1D2A39;
 }
 
+.input-label {
+  position: absolute;
+  margin-top: -25px;
+  color: #6396CB;
+  font-size: 16px;
+}
+
 .form-input {
-  position: relative;
   width: 100%;
+  height: 20px;
   color: #fff;
+  padding: 10px 0 10px 15px;
+  -webkit-transition: .1s;
+  transition: .1s;
 }
 
 .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .input-line::before,
@@ -139,6 +156,7 @@ a {
 
 .page {
   height: 100vh;
+  padding: 0 20px;
   background: #17212B;
 }
 
@@ -201,7 +219,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 20px;
   background: #17212B;
 }
 
@@ -260,7 +277,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 20px;
 }
 
 .phone-caption {
@@ -273,15 +289,15 @@ a {
   margin: auto;
 }
 
-.phone-input {
-  padding: 0 0 10px 15px;
-}
-
 .login-phone-group {
   margin-top: 30px;
 }
 
 .login-form-btn {
   margin-top: 30px;
+}
+
+.code-verification-group {
+  margin-top: 80px;
 }
 /*# sourceMappingURL=style.css.map */

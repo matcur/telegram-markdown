@@ -1,10 +1,22 @@
+$form-color: #6396CB
+
+.input-label
+  position: absolute
+  margin-top: -25px
+  color: $form-color
+  font-size: 16px
+  
 .form-input
-  position: relative
   width: 100%
+  height: 20px
   color: #fff
+  padding: 10px 0 10px 15px
+  transition: .1s
 
 .form-group
+  display: flex
   position: relative
+  flex-direction: column
 
 .input-line::before,
 .input-line::after
@@ -21,7 +33,7 @@
   left: 50%
   height: 2px
   width: 0px
-  background: #6396CB
+  background: $form-color
   transition: .2s
 
 .form-input:focus + .input-line:after
