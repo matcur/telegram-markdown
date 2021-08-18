@@ -1,0 +1,35 @@
+.scan-qr-page
+  display: flex
+  flex-direction: column
+  padding: 0 20px
+  background: $main-background
+
+.qr-code
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  align-self: center
+  margin: auto
+
+.qr-code-image
+  border-radius: 10px
+
+.qr-code-title
+  margin-top: 10px
+
+.qr-code-instruction
+  list-style: none
+  counter-reset: instruction-index
+
+.qr-code-instruction-item
+  font-size: 14px
+  font-weight: 300
+  counter-increment: instruction-index
+
+.qr-code-instruction-item:before
+  content: counter(instruction-index) ". "
+  font-weight: bold
+
+.phone-login
+  color: #6A9D9B

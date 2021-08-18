@@ -1,0 +1,32 @@
+.form-input
+  position: relative
+  width: 100%
+  color: #fff
+
+.form-group
+  position: relative
+
+.input-line::before,
+.input-line::after
+  content: ''
+  position: absolute
+  bottom: 0
+
+.input-line::before
+  height: 1px
+  width: 100%
+  background: #313C49
+
+.input-line::after
+  left: 50%
+  height: 2px
+  width: 0px
+  background: #6396CB
+  transition: .2s
+
+.form-input:focus + .input-line:after
+  left: 0
+  width: 100%
+
+.form-title
+  font-size: 20px
