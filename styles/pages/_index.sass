@@ -5,9 +5,12 @@ $part-delimeter-color: #0F1820
   height: 100vh
   background: $main-background
 
+.chat-item > *
+  min-width: 0
+
 .chat-item
   display: flex
-  justify-content: start
+  justify-content: space-between
   flex-direction: row
   cursor: pointer
   transition: .2s
@@ -19,6 +22,7 @@ $part-delimeter-color: #0F1820
   border-radius: 50%
 
 .chat-image
+  min-width: 50px
   width: 50px
   height: 50px  
   padding: 8px 10px
@@ -27,14 +31,18 @@ $part-delimeter-color: #0F1820
   width: 20px
 
 .chat-item-details
+  padding-right: 2px
   display: flex
   flex-direction: column
   justify-content: center
+  margin-right: auto
+  flex-shrink: 1
 
 .chat-name
   font-size: 14px
 
 .last-message
+  display: flex
   margin-top: 5px
   font-size: 14px
 
@@ -42,6 +50,7 @@ $part-delimeter-color: #0F1820
   color: #73B9F5
 
 .last-message-content
+  margin-left: 5px
   color: #91A3B5
   text-overflow: ellipsis
   white-space: nowrap
@@ -55,6 +64,7 @@ $part-delimeter-color: #0F1820
   padding: 0 10px
   font-size: 14px
   font-weight: 300
+  white-space: nowrap
 
 .last-message-date
   color: #91A3B5

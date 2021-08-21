@@ -382,13 +382,17 @@ a {
   background: #17212B;
 }
 
+.chat-item > * {
+  min-width: 0;
+}
+
 .chat-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -407,6 +411,7 @@ a {
 }
 
 .chat-image {
+  min-width: 50px;
   width: 50px;
   height: 50px;
   padding: 8px 10px;
@@ -417,6 +422,7 @@ a {
 }
 
 .chat-item-details {
+  padding-right: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,6 +433,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: auto;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 }
 
 .chat-name {
@@ -434,6 +443,9 @@ a {
 }
 
 .last-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 5px;
   font-size: 14px;
 }
@@ -443,6 +455,7 @@ a {
 }
 
 .last-message-content {
+  margin-left: 5px;
   color: #91A3B5;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -466,6 +479,7 @@ a {
   padding: 0 10px;
   font-size: 14px;
   font-weight: 300;
+  white-space: nowrap;
 }
 
 .last-message-date {
