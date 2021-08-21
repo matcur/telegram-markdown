@@ -654,6 +654,9 @@ a {
 }
 
 .chat-body {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   padding: 0 15px;
   overflow-y: scroll;
   background: #0E1621;
@@ -960,5 +963,24 @@ input:checked + .fuck:before {
 
 .show-left-menu {
   left: 0;
+}
+
+.current-user-message {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.current-user-message .message-wrapper {
+  background: #2B5278;
+  border-bottom-left-radius: 3px;
+}
+
+.current-user-message .message-triangle {
+  left: calc( 100% - 2px);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-right: 7px solid #2B5278;
 }
 /*# sourceMappingURL=style.css.map */

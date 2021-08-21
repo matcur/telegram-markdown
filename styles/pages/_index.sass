@@ -186,6 +186,7 @@ $part-delimeter-color: #0F1820
   height: 80%
 
 .chat-body
+  flex: 2
   padding: 0 15px
   overflow-y: scroll
   background: $chat-body-background
@@ -200,7 +201,7 @@ $part-delimeter-color: #0F1820
   border-radius: 3px
   border-bottom-left-radius: 0
   background: $message-background
-  
+
 .message-triangle
   position: absolute
   width: 0
@@ -409,3 +410,15 @@ input:checked + .fuck:before
 
 .show-left-menu
   left: 0
+
+.current-user-message
+  flex-direction: row-reverse
+
+.current-user-message .message-wrapper
+  background: #2B5278
+  border-bottom-left-radius: 3px
+
+.current-user-message .message-triangle
+  left: calc( 100% - 2px )
+  transform: rotate(-45deg)
+  border-right: 7px solid #2B5278
